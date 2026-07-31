@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>JavaScript Interactive Webpage</h1>
+        <p>Codeveda Task 3 - Introduction to JavaScript</p>
+    </header>
+
+    <main>
+
+        <!-- Dropdown Section -->
+        <section class="card">
+            <h2>Interactive Dropdown Menu</h2>
+            <p>Click the button below to show or hide the navigation menu.</p>
+
+            <div class="dropdown">
+                <button id="dropdownBtn" class="btn">
+                    Menu ▼
+                </button>
+
+                <div id="dropdownContent" class="dropdown-content">
+                    <a href="#">🏠 Home</a>
+                    <a href="#">ℹ About</a>
+                    <a href="#">📞 Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Section -->
+        <section class="card">
+            <h2>Modal Popup</h2>
+            <p>Click the button to open a modal window.</p>
+
+            <button id="openModal" class="btn">
+                Open Modal
+            </button>
+        </section>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <span id="closeModal" class="close">
+                    &times;
+                </span>
+
+                <h2>Welcome!</h2>
+
+                <p>
+                    This modal popup is created using HTML, CSS,
+                    and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Form Section -->
+        <section class="card">
+            <h2>Registration Form</h2>
+
+            <form id="myForm">
+
+                <label>Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+                <small id="nameError" class="error"></small>
+
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+                <small id="emailError" class="error"></small>
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 6 characters"
+                >
+                <small id="passwordError" class="error"></small>
+
+                <button type="submit" class="btn">
+                    Submit
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Koujuluri Veera Bhaskara Durga Prasad |
+            Codeveda JavaScript Task 3
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
