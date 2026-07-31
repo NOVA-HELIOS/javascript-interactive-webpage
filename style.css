@@ -1,0 +1,232 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d5db;
+}
+
+/* ===========================
+   Main Layout
+=========================== */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.card {
+    background: #ffffff;
+    color: #222;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   Dropdown
+=========================== */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    min-width: 180px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,.2);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    color: #222;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.dropdown-content a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===========================
+   Modal
+=========================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    width: 90%;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    animation: popup .3s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .modal-content {
+        margin-top: 30%;
+    }
+}
