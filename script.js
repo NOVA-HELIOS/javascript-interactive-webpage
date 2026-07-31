@@ -1,4 +1,14 @@
 // ===============================
+// Navigation Menu Toggle
+// ===============================
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
+// ===============================
 // Dropdown Menu
 // ===============================
 
@@ -102,13 +112,4 @@ form.addEventListener("submit", function (event) {
     }
 
 });
-// ===============================
-// Navigation Menu Toggle
-// ===============================
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-
-menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-});
